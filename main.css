@@ -1,0 +1,30 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.profile-image {
+  float: right;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #808000;
+  background-color: #ffffff;
+}
+header {
+  color: #58181f;
+}
+p {
+  color: #000000;
+}
+li {
+  color: #000000;
+}
+footer {
+  color: #58181f;
+}
+body {
+  background-color: #f2e5d9;
+}
