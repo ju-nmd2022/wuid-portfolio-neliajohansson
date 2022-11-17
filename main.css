@@ -41,6 +41,8 @@ footer {
 body {
   background-color: #f2e5d9;
 }
+
+/* <!-- The following 34 lines of code was adapted from https://www.youtube.com/watch?v=rnhoY5Cdmy0 Accessed 2022-11-16 --> */
 .image-grid {
   --gap: 20px;
   --num-cols: 4;
