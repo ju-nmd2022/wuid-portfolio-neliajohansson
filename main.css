@@ -1,6 +1,83 @@
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+.hero-image {
+  background-image: url("Image/DSC_0484.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 800px;
+  display: flex;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: transparent;
+  animation: fade-in-up 2000ms forwards;
+  opacity: 0;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 10px;
+  color: #ffffff;
+  animation: fade-in-up 2000ms forwards;
+  animation-delay: 500ms;
+  opacity: 0;
+}
+
+.hero-btn {
+  text-decoration: none;
+  color: #000000;
+  background: #ffffff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  animation: fade-in-up 2000ms 1000ms forwards,
+    change-color 4000ms 2000ms forwards;
+  opacity: 0;
+}
+
+.hero-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes change-color {
+  from {
+    color: #000000;
+  }
+  to {
+    color: #808000;
+  }
+}
+
 .profile-image {
   width: 50%;
   height: 50%;
@@ -25,9 +102,6 @@ h5,
 h6 {
   color: #808000;
   background-color: #ffffff;
-}
-header {
-  color: #58181f;
 }
 p {
   color: #000000;
@@ -75,5 +149,8 @@ body {
   .image-grid {
     --num-cols: 2;
     --row-height: 200px;
+  }
+  .hero-image {
+    height: 500px;
   }
 }
