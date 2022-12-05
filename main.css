@@ -33,7 +33,7 @@
 .hero-text p {
   font-size: 20px;
   font-weight: 500;
-  line-height: 10px;
+  line-height: normal;
   color: #ffffff;
   animation: fade-in-up 2000ms forwards;
   animation-delay: 500ms;
